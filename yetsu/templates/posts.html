@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Posts</title>
+</head>
+<body>
+	<h1>Todos los POSTS</h1>
+	{% for post in posts %}
+		<article>
+			<h3> {{post.titulo}} </h2>
+			<a href="/post/{{post.id}} "><img src="{{MEDIA_URL}}{{post.portada}}"></a>
+			<p> {{ post.contenido }} </p>
+			<p> Públicado por : {{post.usuario}} </p>
+			<i> {{post.fecha}} </i>
+		</article>
+
+	{% endfor %}
+	<h2>Todos Los Usuarios</h2>
+	{% for user in usuarios %}
+		<article>
+			<h3> {{user.username}} </h3>
+			<p>Email: {{user.email}} </p>
+			<p>Sus Posts</p>
+			<ol>
+			{%for post in posts %}
+				{%if post.usuario == user %}
+					<li> {{post.titulo}} 
+						<!--<br/><small>Tiene  </small>-->
+					</li>
+				{%endif%}
+			{%endfor%}
+			</ol>
+		</article>
+	{% endfor %}
+</body>
+</html>	

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Post Detallado</title>
+</head>
+<body>
+	<h1> {{ post.titulo }} </h1>
+	<img src="{{MEDIA_URL}}{{post.portada}}">
+	<p> {{ post.contenido }} </p>
+	<p> Públicado por : {{post.usuario}} </p>
+	<i> {{post.fecha}} </i>
+	<div>
+		<h2>Comentarios</h2>
+		{%for comentario in comentarios%}
+			<p> {{ comentario.texto }} </p>
+		{% empty %}
+			<p>Sin comentarios</p>			
+		{%endfor%}
+	</div>
+	<small>Post Registrado el : {{ post.fecha }}  por </small> <h3> {{ post.usuario }} </h3>
+</body>
+</html>
