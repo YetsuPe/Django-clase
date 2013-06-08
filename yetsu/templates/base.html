@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block titleWeb %}{% endblock %} </title>
+    <meta name="description" content="Yetsu Tecnología para tu empresa ">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- TUKTUK -->
+    <link rel="stylesheet" href="css/all.css">
+    <!--Yeticons-->
+    <link rel="stylesheet" href="css/font-icons.css" />
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon-yetsu.ico">
+
+    <link href="css/parallax.css" rel="stylesheet" />
+    <meta property="og:title" content="Yetsu | Tecnología para tu Empresa" />
+    <meta property="og:type" content="company" />
+    <meta property="og:url" content="http://yetsu.com/" />
+    <meta property="og:image" content="http://yetsu.com/images/logo-yetsu.png" />
+    <meta property="og:site_name" content="Yetsu | software company" />
+    <meta property="fb:admins" content="100000063796163" />
+
+</head>
+
+<body class="bck black">
+
+
+<div id="home">
+    <header class="bck yetsu-dark">
+        <div class="row">
+            <div class="column_3"><h1 class="text color white">YETSU</h1></div>
+            <nav class="column_8 group text bold show-screen">
+                <a href="/" class="active"><span class="icon-home"></span></a>
+                <a href="/contactanos"><span class="icon-bubbles "></span>Contactanos</a>
+                <a href="/simple">simple</a>
+                <a href="/posts">Posts</a>
+            </nav>
+        </div>
+    </header>
+	<section>
+        {% block contenido %}
+        {% endblock%}
+        <!--<div class="row margin_top">
+
+            <div class="column_2 bck sky-tag-yetsu rounded text center padding_top padding_bottom">
+                <h5 class="text color black italic">Jugando con Django </h5>
+                <i class="icon-html5 icon-4x text color html5 block"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column_3">
+                <img src="images/150px/Ninja-Logo1.png" alt="nuestra MAscota">
+            </div>
+        </div>-->
+    </section>
+    <footer class="bck yetsu-dark " id="footerHome">
+        <div class="row text center padding_top padding_bottom">
+            <a href="https://facebook.com/YetsuPe"><i class="icon-facebook icon-2x reds fb"></i></a>
+            <a href="http://pinterest.com/yetsupe/"><i class="icon-pinterest icon-2x reds pinterest "></i></a>
+            <a href="https://twitter.com/YetsuPe"><i class="icon-twitter icon-2x reds twitter "></i></a>
+            <a href="https://plus.google.com/113323301605684841055" rel="publisher"><i class="icon-google-plus icon-2x reds gplus"></i></a>
+            <a href="https://github.com/YETSU"><i class="icon-github icon-2x reds github_white "></i></a>
+        </div>
+    </footer>
+</div> 
+
+<div id="contact">
+	<div class="row">
+
+        <div class="column_12 text center bck theme rounded">
+            <h4>Buscanos en :</h4>
+        </div> 
+    </div>
+    <div class="row margin_top_5">
+        <div class="column_2 text center padding_top padding_bottom bck white rounded">
+            <a href="https://facebook.com/YetsuPe"><i class="icon-facebook icon-4x reds fb icon-4x "></i></a>
+        </div>
+        <div class="column_2 text center padding_top padding_bottom offset_8 bck white rounded">
+            <a href="http://pinterest.com/yetsupe/"><i class="icon-pinterest icon-2x reds pinterest icon-4x block"></i></a>
+            <a data-pin-do="buttonFollow" href="http://pinterest.com/yetsupe/">Yetsu</a>
+        </div>
+    </div>
+    <div class="row margin_top_5">
+        <div class="column_2 text center padding_top padding_bottom bck white rounded">
+            <a href="https://twitter.com/YetsuPe"><i class="icon-twitter icon-4x reds twitter "></i></a>
+        </div>
+        <div class="column_2 text center padding_top padding_bottom offset_8 bck white rounded">
+            <a href="https://plus.google.com/113323301605684841055"><i class="icon-google-plus icon-4x reds gplus"></i></a>
+        </div>
+    </div>
+    <div class="row margin_top_5">
+        <div class="column_2 text center padding_top padding_bottom bck white rounded">
+             <a href="https://github.com/YETSU"><i class="icon-github icon-4x reds github "></i></a>
+        </div>
+    </div>
+</div> 
+<!--<script src="js/libs/jquery-1.8.3.min.js"></script>-->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="js/libs/parallax.js"></script>
+<script src="js/libs/jquery.localscroll-1.2.7-min.js"></script>
+<script src="js/libs/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="js/libs/jquery.inview.js"></script>
+
+<!--<script src='js/libs/require.js' data-main='js/main.js'>-->
+</body>
+</html>
